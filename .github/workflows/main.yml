@@ -1,3 +1,11 @@
+name: Firebase Deploy
+
+on:
+  push:
+    branches:
+      - main  # ทำงานเมื่อมีการ push ไปที่ branch main
+  workflow_dispatch:  # ทำงานเมื่อ trigger แบบ manual
+
 env:
   FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ETERNAL_COURAGE_435409_U8 }}
 
